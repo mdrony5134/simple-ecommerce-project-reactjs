@@ -157,39 +157,42 @@ const kidsDress= [{
 
   return (
     
-    <div className='App'>
+  <div className='App'>
 
-        <Banner/>
-      <div className='all-products'> 
+    <Banner/>
+
+   <div className='product-category'>
+   <div className='all-products'> 
         
-     {/* men's t-shirt section */}
-
-     <h2>Men's T-shirt</h2>
-     <div className='product-list'>
-     {menShirt.map(({img, header, title, price}, index) => {
-        // eslint-disable-next-line react/jsx-key
-        return <ProductCard {...{img, header, title, price, key: index}}/>
-      })} 
-     </div>
-{/* mens pant section */}
-    <h2>Men's Pant</h2>
-     <div className='product-list'>
-     {menPant.map(({img, header, title, price}, index) => {
-        // eslint-disable-next-line react/jsx-key
-        return <ProductCard {...{img, header, title, price, key: index}}/>
-      })} 
-     </div>
-
-     {/* kids dress section */}
-
-     <h2>Kid's Dress</h2>
-     <div className='product-list'>
-     {kidsDress.map(({img, header, title, price}, index) => {
-        // eslint-disable-next-line react/jsx-key
-        return <ProductCard {...{img, header, title, price, key: index}}/>
-      })} 
-     </div>
-      </div>
+        {/* men's t-shirt section */}
+   
+        <h2>Men's T-shirt</h2>
+        <div className='product-list'>
+        {menShirt.map(({img, header, title, price}, index) => {
+           // eslint-disable-next-line react/jsx-key
+           return <ProductCard {...{img, header, title, price, key: index}}/>
+         })} 
+        </div>
+   {/* mens pant section */}
+       <h2>Men's Pant</h2>
+        <div className='product-list'>
+        {menPant.map(({img, header, title, price}, index) => {
+           // eslint-disable-next-line react/jsx-key
+           return <ProductCard {...{img, header, title, price, key: index}}/>
+         })} 
+        </div>
+   
+        {/* kids dress section */}
+   
+        <h2>Kid's Dress</h2>
+        <div className='product-list'>
+        {kidsDress.map(({img, header, title, price}, index) => {
+           // eslint-disable-next-line react/jsx-key
+           return <ProductCard {...{img, header, title, price, key: index}}/>
+         })} 
+        </div>
+         </div>
+   </div>
 
       <Footer/>
 
